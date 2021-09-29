@@ -34,17 +34,17 @@ public class TestBowling {
 		assertEquals(bowling.score(), 150);
 	}
 	@Test
-	public void testClassic() throws IllegalCaracterException, SizeOfResultException, SumFrameTooHighException, FrameIsNullException {
+	public void testClassicFirst() throws IllegalCaracterException, SizeOfResultException, SumFrameTooHighException, FrameIsNullException {
 		bowling.game("X 9/ 52 72 X 7- X 9- 8/ 9/X");
 		assertEquals(bowling.score(), 142);
 	}
 	@Test
-	public void testClassic2() throws IllegalCaracterException, SizeOfResultException, SumFrameTooHighException, FrameIsNullException {
+	public void testClassicSecond() throws IllegalCaracterException, SizeOfResultException, SumFrameTooHighException, FrameIsNullException {
 		bowling.game("X 2/ 52 3- X 72 X 81 8/ X 5-");
 		assertEquals(bowling.score(), 136);
 	}
 	@Test
-	public void testClassic3() throws IllegalCaracterException, SizeOfResultException, SumFrameTooHighException, FrameIsNullException {
+	public void testClassicThird() throws IllegalCaracterException, SizeOfResultException, SumFrameTooHighException, FrameIsNullException {
 		bowling.game("X 9- 22 72 2- 7- X 9- 8/ -4");
 		assertEquals(bowling.score(), 92);
 	}
